@@ -1,6 +1,6 @@
 {
-  "name": "rollup",
-  "version": "0.67.3",
+  "name": "@github/rollup",
+  "version": "0.67.3-1",
   "description": "Next-generation ES module bundler",
   "main": "dist/rollup.js",
   "module": "dist/rollup.es.js",
@@ -38,7 +38,7 @@
     "test:typescript": "tsc --noEmit -p test/typescript && tsc --noEmit",
     "watch": "rollup -cw"
   },
-  "repository": "rollup/rollup",
+  "repository": "github/rollup.js",
   "keywords": [
     "modules",
     "bundler",
@@ -55,7 +55,10 @@
   "bugs": {
     "url": "https://github.com/rollup/rollup/issues"
   },
-  "homepage": "https://github.com/rollup/rollup",
+  "homepage": "https://github.com/github/rollup.js",
+  "publishConfig": {
+    "registry": "https://npm.registry.github.com/"
+  },
   "dependencies": {
     "@types/estree": "0.0.39",
     "@types/node": "*"
